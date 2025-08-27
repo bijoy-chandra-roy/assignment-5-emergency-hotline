@@ -1,0 +1,66 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Shared Styles */
+.primary-color{
+    color: #006747;
+}
+
+/* Typography */
+body {
+  font-family: "Hind Madurai";
+}
+
+/* Navbar Section */
+nav{
+    margin: 24px 60px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.icon img{
+    height: 50px;
+    width: 50px;
+}
+.indicators{
+    display: flex;
+    gap: 20px;
+}
+.indicators div{
+display: flex;
+gap: 10px;
+padding: 12px;
+background-color: rgba(65, 255, 106, 0.1);
+border-radius: 50px;
+}
+.indicators .coins{
+    padding: 12px 20px;
+}
+
+.indicators .copies{
+    padding: 12px 36px;
+    background-color: #00A63E;
+    color: white;
+}
+
+/* Hero Section */
+.hero{
+    background-image: linear-gradient(#013223, #006747, #013223);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.hero img{
+    width: 92px;
+}
