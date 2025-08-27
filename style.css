@@ -5,62 +5,188 @@
 }
 
 /* Shared Styles */
-.primary-color{
-    color: #006747;
+.primary-color {
+  color: #006747;
+}
+
+.bg-red {
+  background-color: #ffe3e2;
+}
+.bg-blue {
+  background-color: #dfefff;
+}
+.bg-yellow {
+  background-color: rgb(250, 255, 226);
+}
+.bg-pink {
+  background-color: rgb(255, 226, 250);
 }
 
 /* Typography */
 body {
   font-family: "Hind Madurai";
+  background-color: #f5fff6;
+}
+
+.service-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.service {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.service-hotline {
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 2px;
+}
+
+.service-tag {
+  display: inline-block;
+  background-color: #f2f2f2;
+  color: #5c5c5c;
+  border-radius: 9999px;
+  padding: 6px 16px;
+  margin-bottom: 24px;
 }
 
 /* Navbar Section */
-nav{
-    margin: 24px 60px;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-.icon{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.icon img{
-    height: 50px;
-    width: 50px;
-}
-.indicators{
-    display: flex;
-    gap: 20px;
-}
-.indicators div{
-display: flex;
-gap: 10px;
-padding: 12px;
-background-color: rgba(65, 255, 106, 0.1);
-border-radius: 50px;
-}
-.indicators .coins{
-    padding: 12px 20px;
+nav {
+  margin: 24px 60px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.indicators .copies{
-    padding: 12px 36px;
-    background-color: #00A63E;
-    color: white;
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon img {
+  height: 50px;
+  width: 50px;
+}
+
+.icon h1 {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.indicators {
+  display: flex;
+  gap: 20px;
+}
+
+.indicators div {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  background-color: rgba(65, 255, 106, 0.1);
+  border-radius: 50px;
+  font-family: "Inter";
+  font-weight: bold;
+}
+
+.indicators .coins {
+  padding: 12px 20px;
+}
+
+.indicators .copies {
+  padding: 12px 36px;
+  background-color: #00a63e;
+  color: white;
 }
 
 /* Hero Section */
-.hero{
-    background-image: linear-gradient(#013223, #006747, #013223);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.hero {
+  background-image: linear-gradient(#013223, #006747, #013223);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
 }
-.hero img{
-    width: 92px;
+
+.hero img {
+  width: 92px;
+}
+
+/* Main Section Layout */
+main {
+  margin: 48px 60px 86px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
+}
+
+.hotline .card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Card Component */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.img-and-heart {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.img-and-heart img {
+  width: 32px;
+  height: 32px;
+  padding: 14px;
+  border-radius: 16px;
+}
+
+/* CTA Buttons */
+.cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.cta button {
+  border-radius: 8px;
+  padding: 10px 0;
+  border: 1px solid #d4d6d5;
+  color: #5c5c5c;
+}
+
+.cta .btn-primary {
+  background-color: #00a63e;
+  color: white;
+  border: none;
+}
+
+/* History Section */
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.history .heading button {
+  font-family: "Inter";
+  font-weight: bold;
+  padding: 12px 36px;
+  background-color: #00a63e;
+  color: white;
+  border: none;
+  border-radius: 50px;
 }
