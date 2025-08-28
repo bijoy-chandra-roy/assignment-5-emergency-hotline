@@ -22,6 +22,10 @@
   background-color: rgb(255, 226, 250);
 }
 
+button:active {
+  opacity: 0.5;
+}
+
 /* Typography */
 body {
   font-family: "Hind Madurai";
