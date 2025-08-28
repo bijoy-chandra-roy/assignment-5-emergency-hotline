@@ -176,10 +176,16 @@ main {
 }
 
 /* History Section */
+.history {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+}
 .heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 24px 24px 8px;
 }
 .history .heading button {
   font-family: "Inter";
@@ -189,6 +195,33 @@ main {
   color: white;
   border: none;
   border-radius: 50px;
+}
+
+.call-history p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin: 8px 24px;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.call-history p .service-name-log {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.call-history p .service-hotline-log {
+  font-size: 18px;
+  font-weight: 400;
+  color: #5c5c5c;
+}
+
+.call-history p .call-time {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 /* Responsiveness */
