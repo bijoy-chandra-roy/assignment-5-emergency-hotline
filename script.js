@@ -1,10 +1,10 @@
 // Heart Icons
 let hearts = 0;
 const heartCount = document.querySelector(".hearts p");
-const heartIcons = document.querySelectorAll(".card .fa-heart");
+const heartButtons = document.querySelectorAll(".card .fa-heart");
 
-for (const heartIcon of heartIcons) {
-    heartIcon.addEventListener("click", function () {
+for (const heartButton of heartButtons) {
+    heartButton.addEventListener("click", function () {
         hearts++;
         heartCount.innerText = hearts;
     });
@@ -15,6 +15,9 @@ const copyCount = document.querySelector(".copies p:first-child");
 const copyButtons = document.querySelectorAll(".card button:first-child");
 for (const copyButton of copyButtons) {
     copyButton.addEventListener("click", function () {
+        let hotline = this.closest(".card").querySelector(".service-hotline").innerText;
+        navigator.clipboard.writeText(hotline);
+        alert("Copied " + hotline);
         copies++;
         copyCount.innerText = copies;
     });
